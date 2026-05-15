@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dnck48jvt55on"]
+
+[ext_resource type="Script" uid="uid://djebhgafau2wt" path="res://mesh_instance_3d.gd" id="1_f3sb7"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_gv5m4"]
+
+[node name="World" type="Node3D" unique_id=52858303]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2100771336]
+mesh = SubResource("ArrayMesh_gv5m4")
+script = ExtResource("1_f3sb7")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1320834140]
+transform = Transform3D(1, 0, 0, 0, 0.79804695, 0.6025953, 0, -0.6025953, 0.79804695, 0.07342267, 1.1022106, 1.334047)
+
+[node name="LightmapProbe" type="LightmapProbe" parent="." unique_id=482625798]
+transform = Transform3D(1, 0, 0, 0, -0.2156557, -0.97646946, 0, 0.97646946, -0.2156557, 0, 1.3045082, 0)
