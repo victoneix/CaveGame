@@ -3,16 +3,12 @@
 [ext_resource type="Script" uid="uid://djebhgafau2wt" path="res://mesh_instance_3d.gd" id="1_f3sb7"]
 [ext_resource type="Script" uid="uid://bt8psrgm0asd4" path="res://world.gd" id="1_fj7yv"]
 [ext_resource type="PackedScene" uid="uid://bdr3fcurusivl" path="res://player.tscn" id="2_fj7yv"]
-[ext_resource type="Texture2D" uid="uid://d1qwy67uh5gb2" path="res://grass.png" id="3_aqk2v"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_gv5m4"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fj7yv"]
 vertex_color_use_as_albedo = true
-albedo_color = Color(0.5686275, 1, 1, 1)
-albedo_texture = ExtResource("3_aqk2v")
-metallic = 1.0
-texture_filter = 0
+albedo_color = Color(0.5686275, 0.6117647, 1, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_fj7yv"]
 
@@ -23,7 +19,6 @@ script = ExtResource("1_fj7yv")
 mesh = SubResource("ArrayMesh_gv5m4")
 script = ExtResource("1_f3sb7")
 mat = SubResource("StandardMaterial3D_fj7yv")
-world_size = Vector3(256, 2, 256)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D" unique_id=88220248]
 
